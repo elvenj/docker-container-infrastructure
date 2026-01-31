@@ -72,3 +72,15 @@ curl http://localhost:4000
 
 ---
 *Verified execution on Google Cloud Platform.*
+
+## 📊 Workflow Visualization
+```mermaid
+graph LR
+    A[💻 Developer] -->|Code + Dockerfile| B(🐳 Docker Build)
+    B -->|Tag Image| C{📦 Local Image}
+    C -->|gcloud auth| D[☁️ GCP Artifact Registry]
+    D -->|docker pull| E[🚀 Runtime Container]
+    
+    style D fill:#4285F4,stroke:#333,stroke-width:2px,color:white
+    style E fill:#34A853,stroke:#333,stroke-width:2px,color:white
+```
