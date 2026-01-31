@@ -84,12 +84,3 @@ graph LR
     style D fill:#4285F4,stroke:#333,stroke-width:2px,color:white
     style E fill:#34A853,stroke:#333,stroke-width:2px,color:white
 ```
-
-## 📸 Proof of Execution (GCP Console)
-Verification of the Artifact Registry creation and container image versioning in Europe-West4.
-
-### Registry Overview
-![Artifact Registry Repository](gcp-registry-proof.png)
-
-### Image Versioning & Digests
-![Container Details](container-versions.png)
